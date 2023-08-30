@@ -1,1 +1,8 @@
+// global
 
+@import "global/fonts.scss";
+@import "global/variables.scss";
+
+body {
+  font-family: $main-font;
+}
