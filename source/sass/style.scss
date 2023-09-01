@@ -2,7 +2,14 @@
 
 @import "global/fonts.scss";
 @import "global/variables.scss";
+@import "global/global.scss";
 
-body {
-  font-family: $main-font;
-}
+// all page
+
+@import "blocks/page.scss";
+
+// header
+
+@import "blocks/nav.scss";
+@import "blocks/burger.scss";
+@import "blocks/menu.scss";

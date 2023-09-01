@@ -1,0 +1,72 @@
+// burger nav__toggle
+
+.burger .nav__toggle {
+
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  margin: 0 -4px;
+  padding: 0;
+  position: relative;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.burger--opened .nav__toggle::before {
+  width: 18px;
+  height: 19px;
+  background-image: url("../../img/closed.svg");
+  background-size: 18px 19px;
+}
+
+.burger--closed .nav__toggle::before {
+  width: 24px;
+  height: 16px;
+  background-image: url("../../img/opened.svg");
+  background-size: 24px 16px;
+}
+
+// burger--closed
+
+.burger--nojs .nav__box {
+  @media (max-width: $mobile-only) {
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+  }
+}
+
+.burger--nojs .nav__logo {
+  @media (max-width: $mobile-only) {
+    justify-self: start;
+  }
+}
+
+.burger .nav__logo-text {
+  @media (max-width: $mobile-only) {
+    grid-column: 2/3;
+  }
+}
+
+.burger--nojs .nav__toggle {
+  display: none;
+}
+
+.burger--closed .nav__menu {
+  @media (max-width: $mobile-only) {
+    display: none;
+  }
+}

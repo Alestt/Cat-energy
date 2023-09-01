@@ -1,36 +1,78 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Cat Energy</title>
-    <link rel="preload" href="fonts/oswaldregular.woff" as="font" crossorigin>
-    <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin>
-    <link rel="preload" href="fonts/oswaldmedium.woff" as="font" crossorigin>
-    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin>
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
-    <header>
-      <nav>
-        <a>
-          <img src="img/logo-mobile.svg" width="35" height="38" alt="Store's logotype">
-          <img src="img/logo-mobile-text.svg" width="102" height="19" alt="Cat Energy">
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <title>HTML Academy: Cat Energy</title>
+  <link rel="preload" href="fonts/oswaldregular.woff" as="font" crossorigin>
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/oswaldmedium.woff" as="font" crossorigin>
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="page__body">
+  <header class="page__header burger burger--nojs">
+    <nav class="page__nav nav">
+      <div class="nav__box">
+        <a class="nav__logo">
+          <img class="nav__logo-img nav__logo-img--basic" src="img/logo-mobile.svg" width="35" height="38" alt="Store's logotype">
+          <img class="nav__logo-img nav__logo-img--circle" src="img/logo-tablet.svg" width="174" height="52" alt="Store's logotype">
+          <img class="nav__logo-img nav__logo-img--circle-decore" width="202" height="59" src="img/logo-desktop.svg" alt="Store's logotype">
         </a>
-        <button type="button">
+        <a class="nav__logo-text">
+          <img class="nav__logo-img-text" src="img/logo-mobile-text.svg" width="102" height="19" alt="Cat Energy">
+        </a>
+        <button class="nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <ul>
-          <li>
-            <a href="#">Главная</a>
-          </li>
-          <li>
-            <a href="#">Каталог продукции</a>
-          </li>
-          <li>
-            <a href="#">Подбор программы</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-  </body>
+      </div>
+      <ul class="nav__menu menu list">
+        <li class="menu__item menu__item--current">
+          <a class="menu__link" href="#">Главная</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">Каталог продукции</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">Подбор программы</a>
+        </li>
+
+        <!-- <li class="menu__item">
+          <a class="menu__link" href="#">Каталог продукции</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">Подбор программы</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">Каталог продукции</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">Подбор программы</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">Каталог продукции</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">Подбор программы</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link menu__link--current" href="#">Главная</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">Каталог продукции</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link menu__link--current" href="#">Главная</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">Каталог продукции</a>
+        </li> -->
+      </ul>
+    </nav>
+  </header>
+</body>
+
 </html>
